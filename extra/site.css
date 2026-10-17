@@ -1,0 +1,36 @@
+/* Correzioni per il sito pubblicato (aggiunte dallo script postprocess) */
+
+/* la pagina deve scorrere, non allungarsi */
+body.publish #main-horizontal { overflow: hidden !important; min-height: 0 !important; }
+body.publish #center-content { min-height: 0 !important; height: 100% !important; }
+
+/* grafici */
+.site-graph { margin: 0.8em 0; }
+.site-graph .jxgbox { width: 100%; }
+
+/* colonne ricostruite: sul sito le colonne vanno a capo sugli schermi stretti */
+.markdown-preview-view .columns-container.columns-site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+  margin: 0.6em 0;
+}
+.columns-container.columns-site > .column-item {
+  flex: 1 1 0;
+  min-width: 220px;
+  box-sizing: border-box;
+  background: var(--columns-col-bg, transparent);
+  color: var(--columns-col-text, inherit);
+  border: var(--columns-col-border-width, 0px) solid var(--columns-col-border-color, transparent);
+  border-radius: 8px;
+}
+.columns-container.columns-site > .column-item.columns-custom-style { padding: 10px 14px; }
+.columns-container.columns-site > .column-item > .column-preview > :first-child > :first-child { margin-top: 0; }
+.columns-container.columns-site .column-separator-visual {
+  align-self: stretch;
+  border-left: var(--sep-width, 1px) var(--sep-style, solid) var(--sep-color, var(--background-modifier-border));
+}
+@media (max-width: 700px) {
+  .columns-container.columns-site > .column-item { flex-basis: 100% !important; }
+}
