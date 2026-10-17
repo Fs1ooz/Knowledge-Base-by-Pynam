@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="169px" height="86px" viewBox="0 0 169 86" style="background-color: #ffffff00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 99.0165 78.2153)" font-style="normal" font-weight="normal" font-size="200px" font-family="Arial" >
+NH</text>
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 123.089 81.8819)" font-style="normal" font-weight="normal" font-size="150px" font-family="Arial" >
+2</text>
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 36.1989 18.2153)" font-style="normal" font-weight="normal" font-size="200px" font-family="Arial" >
+O</text>
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 3.37813 54.2153)" font-style="normal" font-weight="normal" font-size="200px" font-family="Arial" >
+HO</text>
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 119.337 18.2153)" font-style="normal" font-weight="normal" font-size="200px" font-family="Arial" >
+O</text>
+<text x="0" y="0" stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 140.122 54.2153)" font-style="normal" font-weight="normal" font-size="200px" font-family="Arial" >
+OH</text>
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5643.01,3191.82 L 5649.42,3188.58 L 5655.82,3191.82 L 5679.42,3381.92 L 5619.42,3381.92 L 5643.01,3191.82 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5898.83,3037.66 L 5898.83,3051.51 L 5655.82,3191.82 L 5649.42,3188.58 L 5649.42,3181.66 L 5898.83,3037.66 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5649.42,3181.66 L 5649.42,3188.58 L 5643.01,3191.82 L 5400,3051.51 L 5400,3037.66 L 5649.42,3181.66 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5400,3037.66 L 5400,3051.51 L 5150.58,3195.51 L 5150.58,3181.66 L 5400,3037.66 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5150.58,3181.66 L 5150.58,3195.51 L 4901.17,3051.51 L 4901.17,3037.66 L 5150.58,3181.66 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 4881.25,3059.55 L 4869.25,3059.55 L 4869.25,2868.42 L 4881.25,2868.42 L 4881.25,3059.55 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 4933.09,3059.55 L 4921.09,3059.55 L 4921.09,2868.42 L 4933.09,2868.42 L 4933.09,3059.55 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 4901.17,3037.66 L 4901.17,3051.51 L 4740.6,3144.22 L 4734.6,3133.82 L 4901.17,3037.66 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5878.91,3059.55 L 5866.91,3059.55 L 5866.91,2868.42 L 5878.91,2868.42 L 5878.91,3059.55 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5930.75,3059.55 L 5918.75,3059.55 L 5918.75,2868.42 L 5930.75,2868.42 L 5930.75,3059.55 Z " />
+<path stroke="none" fill="#ffffff" transform="matrix(0.0833333 0 0 0.0833333 -365.75 -218)" d="M 5898.83,3051.51 L 5898.83,3037.66 L 6065.72,3134.01 L 6059.72,3144.4 L 5898.83,3051.51 Z " />
+</svg>
