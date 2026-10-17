@@ -403,6 +403,39 @@ def update_graphs_engine():
         if not os.path.exists(dst) or open(dst, "rb").read() != data:
             open(dst, "wb").write(data); print("motore grafici aggiornato")
 
+HREF_RE = re.compile(r'href="([^"#?:]+\.html)((?:#[^"]*)?)"')
+
+def fix_moved_links():
+    """link a pagine che non esistono piu' (nota spostata in un'altra cartella):
+    se c'e' una sola pagina con lo stesso nome, il link punta li'."""
+    pages = []
+    for root, dirs, files in os.walk(SITE):
+        dirs[:] = [d for d in dirs if not d.startswith(".") and d not in ("allegati", "extra", "tools")]
+        for f in files:
+            if f.endswith(".html"):
+                pages.append(os.path.relpath(os.path.join(root, f), SITE).replace(os.sep, "/"))
+    existing = set(pages)
+    by_name = {}
+    for pth in pages:
+        by_name.setdefault(pth.rsplit("/", 1)[-1], []).append(pth)
+    fixed = 0
+    for pth in pages:
+        full = os.path.join(SITE, pth)
+        s = open(full, encoding="utf-8").read()
+        def repl(m):
+            target = m.group(1)
+            if target in existing:
+                return m.group(0)
+            cand = by_name.get(target.rsplit("/", 1)[-1], [])
+            if len(cand) == 1:
+                return 'href="%s%s"' % (cand[0], m.group(2))
+            return m.group(0)
+        s2 = HREF_RE.sub(repl, s)
+        if s2 != s:
+            open(full, "w", encoding="utf-8").write(s2); fixed += 1
+    if fixed:
+        print("pagine con link a note spostate corretti:", fixed)
+
 def main():
     if not sys.argv[3:]:
         compress_images()
@@ -428,7 +461,8 @@ def main():
             msgs.append("  ERRORE: %r" % e)
         if msgs:
             print(tgt); [print(x) for x in msgs]
-    # index.html e altre pagine fuori dalla mappa
+    if not only:
+        fix_moved_links()
     print("pagine modificate:", changed)
 
 if __name__ == "__main__":
